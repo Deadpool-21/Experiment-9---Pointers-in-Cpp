@@ -1,0 +1,46 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int a = 40;
+    double c = 25;
+    bool d = true;
+
+    int* ptr1 = &a;
+    double* ptr3 = &c;
+    bool* ptr4 = &d;
+
+    cout << "Value of Integer : " << a << endl;
+    cout << "Before Increment : " << ptr1 << endl;
+    ptr1++;
+    cout << "After Increment  : " << ptr1 << endl;
+    cout << endl;
+
+    cout << "Value of Double  : " << c << endl;
+    cout << "Before Increment : " << ptr3 << endl;
+    ptr3++;
+    cout << "After Increment  : " << ptr3 << endl;
+    cout << endl;
+
+    cout << "Value of Boolean : " << d << endl;
+    cout << "Before Increment : " << ptr4 << endl;
+    ptr4++;
+    cout << "After Increment  : " << ptr4 << endl;
+    cout << endl;
+
+    return 0;
+}
+
+Output:- 
+
+Value of Integer : 40
+Before Increment : 0x7fffa4742874
+After Increment  : 0x7fffa4742878
+
+Value of Double  : 25
+Before Increment : 0x7fffa4742868
+After Increment  : 0x7fffa4742870
+
+Value of Boolean : 1
+Before Increment : 0x7fffa4742867
+After Increment  : 0x7fffa4742868
